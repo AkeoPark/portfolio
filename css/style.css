@@ -1,0 +1,212 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200;400;500;700;800&display=swap');
+/*header*/
+    #header{display:flex;justify-content: space-between;align-items: center;position:fixed;top:0;left:0;z-index: 70;width: 100%;
+        	margin:0;	background:rgba(250,250,250,0);	transition:ease 0.4s	;color:#000;padding:1rem 0}
+    /* #header:hover {background:rgba(250,250,250,0.80);} */
+    #header .logo {margin-left:4rem;}
+		#header .logo a img {width:110px;height:55px;}
+    #header #menu {display:flex;margin-right:4rem}
+    #header #menu li{font-size:1.9rem;padding:.8rem 1.2rem}
+    #header #menu li.active{border-bottom:.3rem solid #aa97e7;color: #393939;}
+    #header #menu li a{	text-decoration:none;color: #000;}
+
+    /* #header #menu li.active a:hover{color: #8a66ff;} */
+    /* #header #menu li:hover{	background: rgba(137, 137, 137, 0.8);} */
+    #header #menu li a,
+    #header #menu li.active a{padding: .1rem 1.8rem;display:block;} 
+    #header #menu li.active a{color: #000;}
+
+
+
+  /*배경색상*/
+    .s1 {background-color: #f9f5e6;
+			font-family: 'Do Hyeon', sans-serif;text-align:center;}
+			/* background: url(../img/pssh.png) no-repeat ;background-size: 64rem 90rem; */
+    .s2 {background: #f9f5e6}
+    .s3 {background: #c9aed2;position:relative}
+    .s4 {background: #c9aed2;position:relative}
+    .s5 {background: #c9aed2;position:relative}
+    .s6 {background: #f9f5e6;position:relative}
+	  
+	 
+    /*H1 of each section*/
+    .s1 h1 {color:#000;font-size:2.8rem}
+    .s2 h1 {color:#000}
+	  .s3 h1, .s4 h1 {color:#000;text-align:center;}
+	
+	
+	/*s1*/ 
+	  .s1 #typing {font-size:6.3rem;color:#000}
+	  
+	  /*scroll animation*/
+		.scrollbtn {position:absolute;left:50%;bottom:5rem;transform:translateX(-50%);
+		display:flex;flex-direction:column;align-items:center}
+		.mouse{width:3rem;height:5rem;border:.2rem solid #333;border-radius:2rem;margin-bottom:.8rem;display:flex;}
+		.mouse span {width:1rem;height:1rem;background-color: #333;display:block;border-radius:100%;margin:auto;
+		animation:move-wheel 1.3s linear infinite}
+
+		.arrow span {width:1rem;height:1rem;border:.2rem solid transparent;border-right-color:#e1e1e1;border-bottom-color:#e1e1e1;
+		display:block;transform:rotate(45deg);margin:auto;animation:arrow-down .8s alternate infinite}
+		@keyframes move-wheel{
+		 0%{
+			opacity:0;
+			transform:translateY(-1rem);
+		 }
+		 100%{
+			opacity:1;
+			transform:translateY(1rem);
+		 }
+		}
+
+		@keyframes arrow-down{
+		 0%{
+			opacity:0;
+			
+		 }
+		 25%{
+			opacity:.3;
+
+		 }
+		 50%{
+			opacity:.5;
+
+		 }
+		 75%{
+			opacity:.7;
+
+		 }
+		 100%{
+			opacity:1;
+
+		 }
+		} 
+
+    /*.s2 about*/
+	   .s2 h1 {font-size:3.3rem;letter-spacing:.2rem;font-weight:700;text-align:center;margin:2rem 0} 
+	   .s2 #skill {display: flex; justify-content: space-between; align-items: flex-start; margin: 0 5rem;
+		margin-top:7rem;}
+	   .s2 #skill > div {width:33.3333%; padding:2rem;}
+	   .s2 #skill > div h2 {color:#222;font-size:2rem;margin-bottom:2rem;font-weight:700;letter-spacing:.2rem} 
+		 .s2 #skill > div:first-child {width:19%;padding-left:3%;}
+		 .s2 #skill > div:nth-child(2),
+		 .s2 #skill > div:last-child {margin-top:5rem;}
+	   .s2 #skill #txtblock {border-right:0;font-size:1.6rem;color:#666;letter-spacing:.2rem;margin-bottom:1%;}
+	   .s2 #skill #txtblock .hello {text-indent:.2rem;font-weight:300;font-size:1.5rem}
+	   .s2 #skill #txtblock .hello strong{text-indent:0;font-weight:700;font-size:3rem;color:#222;letter-spacing:.2rem;color:#404040}
+		 .s2 #skill #txtblock img {width:22rem; margin-right: 3rem;margin-bottom:2rem;}
+		 .s2 #skill #txtblock .contact ul li:nth-child(2) a:hover {color:#796dd4}
+	   .s2 #skill #txtblock .gitIcon {width:3.5rem;height:3.5rem;
+		background-color: #fff;border-radius:4rem;margin-top:2rem;display:block;opacity: .8;transition:ease-in .4s}
+	   .s2 #skill #txtblock .gitIcon::before {content: "\f09b";font-size:4rem;line-height:4rem; font-family:Font Awesome\ 5 Brands;}
+	   .s2 #skill #txtblock .gitIcon:hover {opacity:1;color:rgba(166, 129, 221, 0.83);}
+	   .s2 #skill .skill_detail{position:relative;margin-bottom:4rem}
+	   .s2 #skill .skill_detail:after{content:'';width:105%;height:.1rem;background: #ccc;position:absolute;left:-2rem;bottom:-1rem}
+	   .s2 #skill .skill_detail li {padding:.3rem 0;font-size:1.4rem;color:#555}	     
+	   
+	    
+	   .s2 #skill .pro {overflow: hidden;display:flex;flex-direction: row;justify-content: space-between;margin:.5rem}
+	   .s2 #skill .pro .subject{font-size:1.5rem;display:flex;height:3.5rem;width: 17%;line-height:3.5rem;margin-right:8%;color:#222}
+	   .s2 #skill .pro .progress{display:flex;width:53%;height: 1.5rem;margin-top:.7rem;border: .1rem solid #ccc;position: relative;}
+	   .s2 #skill .pro .progress .bar{display: block;position: absolute;left:0;top:.1rem;height:1.3rem;width: auto;background:rgba(166, 129, 221, 0.83);}
+	   .s2 #skill .pro .bar_txt{height: 2rem;line-height:2.4rem;font-size:1.4rem;color:#222;margin-left:-6%;}
+	   .s2 #skill .pro .bar_txt + span {height:2rem;margin-left:-8%;font-size:1.5rem;color:#222;line-height:2.4rem;}
+
+  	/*text box*/
+		.txt_bg {width:40.8%;height:calc(90vh);background-color: rgba(250,250,250,0.95);position:absolute;left:4rem;top:10rem}
+		.txt_bg .detail {position:absolute;right:5rem;bottom:17.89%;width:40rem;height:45rem;text-align: justify;color:#252525;font-size:1.5rem}
+		.txt_bg .detail .num {font-size:1.4rem}
+		.txt_bg .detail .tit {text-align: justify;color:#252525;font-weight:800;font-size:5.5rem}
+		.txt_bg .detail .subtit {font-size:2.9rem;font-weight:600}
+		.txt_bg .detail .info {margin-top:3%;line-height:3rem}
+		.txt_bg .detail .info strong {font-weight: normal;font-size:1.7rem}
+		.txt_bg .detail .linkbtn {margin-top:2.6rem;width:100%;}
+		.txt_bg .detail .linkbtn li {float:left;width:48%;text-align:center;height:4rem;line-height: 4rem;border:.1rem solid #303030;margin:.5rem 0}
+		.txt_bg .detail .linkbtn li:nth-child(odd){margin-right:2%}
+		.txt_bg .detail .linkbtn li a {display:block;transition:linear 0.3s}
+		.txt_bg .detail .linkbtn li a:hover {background-color: #000;color:#fff}
+		.txt_bg .detail .ps {font-size:1rem;clear:left;padding-top:5%}
+
+	/*img block*/
+	  .imgblock img {position: absolute;
+		right: 7%;
+		top: 50%;max-width: 80rem;
+		width: 45%;
+		min-width: 25rem;
+		transform: translate(0, -45%);
+		box-shadow: 1.5rem 2rem 2rem rgba(0, 0, 0, 0.3);}
+
+		.s4 .imgblock img {width: 550px;height: 350px;}
+/* s3 */
+		.s3 img {width:560px;position: absolute;
+			right:7%;
+			top: 52%}
+		.s3 .txt_bg .detail .tit  {font-size:4.9rem}
+    /*s5*/
+		.s5  .txt_bg .detail .tit  {font-size:4.4rem}
+
+   /*s6*/
+		
+		.s6 .more_port {width:90%;margin:2rem auto} 
+		.s6 .more_port h1 {text-align:center;font-size:3.3rem;font-weight:700;margin-bottom:2%}
+		.s6 .more_port .hover {width:30rem;height:45rem;float:left;width:23%;margin:1rem;
+		transition:all ease 0.5s;position:relative; overflow: hidden;background-color: #ff9;transition: box-shadow 300ms cubic-bezier(0.41, 0.25, 0.08, 1) 0ms;
+		box-shadow: 0 2.7rem 5.5rem 0 rgba(0, 0, 0, 0.3), 0 1.7rem 1.7rem 0 rgba(0, 0, 0, 0.15);}
+		.s6 .more_port .hover:hover{box-shadow: 0 .6rem 1rem 0 rgba(0, 0, 0, 0.25), 0 .2rem .2rem 0 rgba(0, 0, 0, 0.1);}
+		.s6 .more_port .hover img {width:100%;height:100%;transform: scale(1);
+		transition: transform 700ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms; backface-visibility: hidden;}
+		.s6 .more_port .hover:hover img { transform: scale(1.06);
+            transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;}
+
+		.s6 .more_port .hover .desc {width:100%;height:100%;background:rgba(50,50,50,.9);
+		position:absolute; left:0;top:0 ;opacity:0;animation-name: bgout; animation-duration:400ms; transition: opacity 400ms cubic-bezier(0.39, 0.575, 0.565, 1) 0ms;}
+		.s6 .more_port .hover .desc .txtbx {width:80%; position: absolute; top: 50%; left: 50%;transform: translate3d(-50%,-50%,0);color:#fff;}
+		
+		.s6 .more_port .hover .desc .txtbx h2 {font-size:2.2rem;color:#fff;font-weight:700;padding-bottom:1rem; }
+		.s6 .more_port .hover .desc .txtbx p {font-size:1.6rem;line-height:3rem;}
+		.s6 .more_port .hover .desc .txtbx .linkbtn {padding-top:2rem}
+		.s6 .more_port .hover .desc .txtbx .linkbtn li{transition:ease-in .4s;padding:1rem 2rem;float:left;text-align:center;font-size:1.5rem;border:.1rem solid #e8e8e8}
+		.s6 .more_port .hover .desc .txtbx .linkbtn li:first-child{margin-right:2%}
+		.s6 .more_port .hover .desc .txtbx .linkbtn li a {display:block;color:#e8e8e8}
+		.s6 .more_port .hover .desc .txtbx .linkbtn li:hover{background-color: #e8e8e8;transition:ease-in .4s}
+		.s6 .more_port .hover .desc .txtbx .linkbtn li:hover a {color:#000;}
+		.s6 .more_port .hover:hover .desc{opacity: 0.98;transform: scale(1);
+            animation-name: bgin; animation-duration:400ms;will-change:opacity;
+            transition: opacity 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+		
+		@keyframes bgin{
+			from {
+				opacity: 0;
+				transform: scale(0.1);
+			}
+			to {
+				opacity: 0.98;
+				transform: scale(1);
+			}
+		}
+		@keyframes bgout{
+			from {
+				opacity: 0.98;
+				transform: scale(1);
+			}
+			to {
+				opacity: 0;
+				transform: scale(1);
+			}
+		}
+		/* .s6 .more_port #work4, .s6 .more_port #work5{height:21.5rem;} */
+
+   /*s7 about*/
+		
+		/* .s7 .contact {display: flex; justify-content: center; align-items: flex-end;}
+		.s7 .contact .c1 img {width:22rem; margin-right: 3rem;}
+		.s7 .contact .c2 {color:#000;font-size:1.7rem;}
+		.s7 .contact .c2 a {color:#000;}
+		.s7 .contact .c2 h2 {color:#000;font-weight:400;}
+		.s7 .contact .c2 h2 span {font-size:3.5rem;font-weight:500;margin-bottom:5%;opacity:0.8}
+		.s7 .contact .c2 h2 strong {color:#796dd4;font-size:5rem;opacity:0.7}
+		.s7 .contact .c2 ul li {padding:.6rem 0}
+		.s7 .contact .c2 ul li:nth-child(2) a:hover {color:#796dd4} */
